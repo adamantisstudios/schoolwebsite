@@ -2,35 +2,35 @@ import { Star, Quote } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Emily Rodriguez",
-    role: "Parent of Primary student",
-    image: "/placeholder-v5ohj.png",
+    name: "Ama Oforiwaa",
+    role: "Mother of a Primary student",
+    image: "/images/ama-oforiwaa.jpg",
     content:
-      "The transformation in my daughter's confidence and love for learning has been remarkable. The Montessori approach truly nurtures the whole child.",
+      "My daughter’s confidence and passion for learning have grown so much. The Montessori method truly cares for the whole child—heart, mind, and spirit.",
     rating: 5,
   },
   {
-    name: "James Wilson",
-    role: "Parent of Elementary student",
-    image: "/happy-parent-man.jpg",
+    name: "Kwabena Owusu",
+    role: "Father of an Elementary student",
+    image: "/images/kwabena-owusu.jpg",
     content:
-      "Our son has developed such independence and critical thinking skills. The mixed-age classroom has been wonderful for his social development too.",
+      "Our son has become so independent and thinks critically now. The mixed-age classroom has also helped him build strong social skills and respect for others.",
     rating: 5,
   },
   {
-    name: "Priya Patel",
-    role: "Parent of Toddler student",
-    image: "/happy-parent-woman-smiling.jpg",
+    name: "Abena Serwaa",
+    role: "Mother of a Toddler student",
+    image: "/images/abena-serwaa.jpg",
     content:
-      "The gentle guidance and respect for children's natural development is exactly what we were looking for. Our toddler loves coming to school every day.",
+      "The patience and respect the teachers show for each child’s natural pace is exactly what we wanted. My toddler is always excited to go to school!",
     rating: 5,
   },
   {
-    name: "Robert Kim",
-    role: "Parent of Primary student",
-    image: "/happy-parent-man-professional.jpg",
+    name: "Kwame Nkansah",
+    role: "Father of a Primary student",
+    image: "/images/kwame-nkansah.jpg",
     content:
-      "The teachers truly understand each child's unique needs. The progress reports show not just academic growth but emotional and social development too.",
+      "The teachers here really understand and support each child’s unique journey. The progress reports reflect growth not just in academics, but in character and social skills too.",
     rating: 5,
   },
 ]

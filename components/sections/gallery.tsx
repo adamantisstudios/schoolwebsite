@@ -4,46 +4,46 @@ import { useState } from "react"
 import { X } from "lucide-react"
 
 const galleryImages = [
-  {
-    src: "/montessori-classroom-environment.jpg",
-    alt: "Montessori classroom environment",
-    title: "Prepared Environment",
+ {
+    "src": "/images/montessori-classroom-environment.jpg",
+    "alt": "Montessori classroom environment",
+    "title": "Prepared Environment"
   },
   {
-    src: "/placeholder-h4jfz.png",
-    alt: "Children working with materials",
-    title: "Hands-on Learning",
+    "src": "/images/children-working-with-materials.jpg",
+    "alt": "Children working with materials",
+    "title": "Hands-on Learning"
   },
   {
-    src: "/placeholder-ujb6e.png",
-    alt: "Outdoor learning garden",
-    title: "Nature Connection",
+    "src": "/images/outdoor-learning-garden.jpg",
+    "alt": "Outdoor learning garden",
+    "title": "Nature Connection"
   },
   {
-    src: "/placeholder-zzawt.png",
-    alt: "Practical life activities",
-    title: "Practical Life",
+    "src": "/images/practical-life-activities.jpg",
+    "alt": "Practical life activities",
+    "title": "Practical Life"
   },
   {
-    src: "/placeholder-tugz6.png",
-    alt: "Children reading together",
-    title: "Language Development",
+    "src": "/images/children-reading-together.jpg",
+    "alt": "Children reading together",
+    "title": "Language Development"
   },
   {
-    src: "/montessori-math-materials-golden-beads.jpg",
-    alt: "Mathematics materials",
-    title: "Mathematical Concepts",
+    "src": "/images/montessori-math-materials-golden-beads.jpg",
+    "alt": "Mathematics materials",
+    "title": "Mathematical Concepts"
   },
   {
-    src: "/placeholder.svg?height=300&width=400",
-    alt: "Creative arts",
-    title: "Creative Expression",
+    "src": "/images/creative-arts.jpg",
+    "alt": "Creative arts",
+    "title": "Creative Expression"
   },
   {
-    src: "/placeholder.svg?height=300&width=400",
-    alt: "Collaborative learning",
-    title: "Social Learning",
-  },
+    "src": "/images/collaborative-learning.jpg",
+    "alt": "Collaborative learning",
+    "title": "Social Learning"
+  }
 ]
 
 export default function Gallery() {

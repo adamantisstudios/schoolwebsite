@@ -6,20 +6,20 @@ import { Button } from "@/components/ui/button"
 
 const slides = [
   {
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/images/hero1.jpg?height=800&width=1200",
     title: "Nurturing Young Minds",
     subtitle: "A holistic Montessori education that fosters independence, creativity, and lifelong learning",
     cta: "Enroll Now",
     secondaryCta: "Learn More",
   },
   {
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/images/hero2.jpg?height=800&width=1200",
     title: "Child-Centered Learning",
     subtitle: "Our carefully prepared environments inspire curiosity and discovery",
     cta: "View Programs",
   },
   {
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/images/hero3.jpg?height=800&width=1200",
     title: "Hands-On Education",
     subtitle: "Concrete materials make abstract concepts accessible to young learners",
     cta: "Schedule a Tour",

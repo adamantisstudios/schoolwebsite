@@ -20,7 +20,7 @@ const topStudents = [
       "30% Tuition Fee Discount",
       "Student of the Year Certificate",
     ],
-    image: "/student-ama-asante.jpg",
+    image: "/images/student-ama-asante.jpg",
     quote: "Learning is like playing - when you love what you do, you become the best at it!",
   },
   {
@@ -30,7 +30,7 @@ const topStudents = [
     program: "Primary Program",
     achievements: ["Mathematics Excellence", "Environmental Stewardship", "Community Service Leadership"],
     prizes: ["2 Educational Books", "GHS 200 Cash Prize", "20% Tuition Fee Discount"],
-    image: "/student-kwame-osei.jpg",
+    image: "/images/student-kwame-osei.jpg",
   },
   {
     rank: 3,
@@ -39,7 +39,7 @@ const topStudents = [
     program: "Primary Program",
     achievements: ["Language Arts Proficiency", "Cultural Studies Excellence", "Artistic Expression"],
     prizes: ["1 Educational Book Set", "GHS 100 Cash Prize", "15% Tuition Fee Discount"],
-    image: "/student-akosua-mensah.jpg",
+    image: "/images/student-akosua-mensah.jpg",
   },
 ]
 

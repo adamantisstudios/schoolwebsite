@@ -133,7 +133,7 @@ export default function Programs() {
             </div>
             <div>
               <img
-                src="/placeholder-5ylxc.png"
+                src="/images/summercamphome.jpg"
                 alt="Children at summer camp"
                 className="w-full rounded-lg shadow-lg hover-lift"
               />

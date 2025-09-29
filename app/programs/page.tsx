@@ -227,7 +227,7 @@ export default function ProgramsPage() {
 
               <div>
                 <img
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/images/summercamphome.jpg?height=400&width=600"
                   alt="Children at summer camp"
                   className="w-full rounded-lg shadow-lg hover-lift"
                 />

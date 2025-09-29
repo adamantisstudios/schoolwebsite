@@ -7,7 +7,7 @@ export default function WelcomeNote() {
           <div className="relative">
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/placeholder.svg?height=400&width=400"
+                src="/images/schoolmistress.jpg?height=400&width=400"
                 alt="School Manager"
                 className="w-full h-full object-cover"
               />
