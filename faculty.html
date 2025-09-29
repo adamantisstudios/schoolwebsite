@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Faculty | Montessori Bloom</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.02); }
+        .teacher-card { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="font-poppins bg-stone-50 text-stone-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="font-playfair text-2xl text-amber-600">Montessori Bloom</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="index.html" class="text-stone-600 hover:text-amber-600 px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="philosophy.html" class="text-stone-600 hover:text-amber-600 px-3 py-2 text-sm font-medium">Philosophy</a>
+                        <a href="programs.html" class="text-stone-600 hover:text-amber-600 px-3 py-2 text-sm font-medium">Programs</a>
+                        <a href="faculty.html" class="text-amber-600 hover:text-amber-700 px-3 py-2 text-sm font-medium">Faculty</a>
+                        <a href="contact.html" class="text-stone-600 hover:text-amber-600 px-3 py-2 text-sm font-medium">Contact</a>
+                        <button class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-md transition duration-300">Schedule a Tour</button>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-stone-600 hover:text-amber-600">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-base font-medium text-stone-600 hover:text-amber-600">Home</a>
+                <a href="philosophy.html" class="block px-3 py-2 text-base font-medium text-stone-600 hover:text-amber-600">Philosophy</a>
+                <a href="programs.html" class="block px-3 py-2 text-base font-medium text-stone-600 hover:text-amber-600">Programs</a>
+                <a href="faculty.html" class="block px-3 py-2 text-base font-medium text-stone-600 hover:text-amber-600">Faculty</a>
+                <a href="contact.html" class="block px-3 py-2 text-base font-medium text-stone-600 hover:text-amber-600">Contact</a>
+                <button class="w-full bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-md mt-2">Schedule a Tour</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-96 overflow-hidden bg-gradient-to-r from-amber-500 to-amber-600 flex items-center justify-center">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="font-playfair text-4xl md:text-5xl font-bold mb-4 text-white">Our Faculty</h1>
+            <p class="text-xl text-white max-w-2xl mx-auto">Meet our AMI-certified Montessori educators</p>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-stone-800 mb-4">Dedicated Montessori Guides</h2>
+                <p class="text-stone-600 max-w-3xl mx-auto">Our teachers are passionate about Montessori education and dedicated to each child's development.</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-stone-50 p-8 rounded-lg teacher-card hover-scale">
+                    <img src="https://static.photos/people/200x200/101" alt="Teacher Maria" class="w-32 h-32 rounded-full object-cover mx-auto mb-6">
+                    <h3 class="font-playfair text-xl font-bold mb-2 text-center">Maria Johnson</h3>
+                    <p class="text-amber-600 mb-3 text-center">Head of School</p>
+                    <p class="text-stone-600 text-sm text-center mb-4">AMI Diploma, 15 years experience</p>
+                    <p class="text-stone-600 text-sm text-center">"Every child deserves an education that nurtures their natural curiosity and love of learning."</p>
+                </div>
+                <div class="bg-stone-50 p-8 rounded-lg teacher-card hover-scale">
+                    <img src="https://static.photos/people/200x200/102" alt="Teacher David" class="w-32 h-32 rounded-full object-cover mx-auto mb-6">
+                    <h3 class="font-playfair text-xl font-bold mb-2 text-center">David Chen</h3>
+                    <p class="text-amber-600 mb-3 text-center">Primary Guide</p>
+                    <p class="text-stone-600 text-sm text-center mb-4">AMI Diploma, 8 years experience</p>
+                    <p class="text-stone-600 text-sm text-center">"The prepared environment allows children to discover their potential at their own pace."</p>
+                </div>
+                <div class="bg-stone-50 p-8 rounded-lg teacher-card hover-scale">
+                    <img src="https://static.photos/people/200x200/103" alt="Teacher Sarah" class="w-32 h-32 rounded-full object-cover mx-auto mb-6">
+                    <h3 class="font-playfair text-xl font-bold mb-2 text-center">Sarah Williams</h3>
+                    <p class="text-amber-600 mb-3 text-center">Toddler Guide</p>
+                    <p class="text-stone-600 text-sm text-center mb-4">AMI Diploma, 5 years experience</p>
+                    <p class="text-stone-600 text-sm text-center">"The first years are foundational for developing independence and confidence."</p>
+                </div>
+                <div class="bg-stone-50 p-8 rounded-lg teacher-card hover-scale">
+                    <img src="https://static.photos/people/200x200/104" alt="Teacher Michael" class="w-32 h-32 rounded-full object-cover mx-auto mb-6">
+                    <h3 class="font-playfair text-xl font-bold mb-2 text-center">Michael Brown</h3>
+                    <p class="text-amber-600 mb-3 text-center">Elementary Guide</p>
+                    <p class="text-stone-600 text-sm text-center mb-4">AMI Diploma, 10 years experience</p>
+                    <p class="text-stone-600 text-sm text-center">"Elementary students thrive when given opportunities for exploration and discovery."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section class="py-20 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-playfair text-3xl font-bold mb-6">AMI-Certified Training</h2>
+                    <p class="text-stone-600 mb-6">All our lead teachers hold Association Montessori Internationale (AMI) diplomas, ensuring the highest standards of Montessori education.</p>
+                    <ul class="text-stone-600 space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-5 h-5 text-amber-500 mr-2 mt-1"></i>
+                            <span>Comprehensive training in Montessori philosophy and methodology</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-5 h-5 text-amber-500 mr-2 mt-1"></i>
+                            <span>Deep understanding of child development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-5 h-5 text-amber-500 mr-2 mt-1"></i>
+                            <span>Expertise in Montessori materials and curriculum</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-5 h-5 text-amber-500 mr-2 mt-1"></i>
+                            <span>Ongoing professional development</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="https://static.photos/education/1200x630/105" alt="Teacher training" class="w-full rounded-lg shadow-lg hover-scale">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-playfair text-xl text-white mb-4">Montessori Bloom</h3>
+                    <p class="mb-4">Nurturing young minds through authentic Montessori education since 2010.</p>
+                    <button class="bg-amber-500 hover:bg-amber-600 text-white px-6 py-2 rounded-md text-sm font-medium transition duration-300">Schedule a Tour</button>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-amber-400 transition duration-300">Home</a></li>
+                        <li><a href="philosophy.html" class="hover:text-amber-400 transition duration-300">Our Philosophy</a></li>
+                        <li><a href="programs.html" class="hover:text-amber-400 transition duration-300">Programs</a></li>
+                        <li><a href="faculty.html" class="hover:text-amber-400 transition duration-300">Faculty</a></li>
+                        <li><a href="contact.html" class="hover:text-amber-400 transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium mb-4">Programs</h4>
+                    <ul class="space-y-2">
+                        <li><a href="toddler-program.html" class="hover:text-amber-400 transition duration-300">Toddler Community</a></li>
+                        <li><a href="primary-program.html" class="hover:text-amber-400 transition duration-300">Primary Program</a></li>
+                        <li><a href="elementary-program.html" class="hover:text-amber-400 transition duration-300">Elementary Program</a></li>
+                        <li><a href="summer-camp.html" class="hover:text-amber-400 transition duration-300">Summer Camp</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium mb-4">Contact</h4>
+                    <address class="not-italic">
+                        <p class="mb-2">No. 15 Osu Oxford Street</p>
+                        <p class="mb-2">Accra, Ghana</p>
+                        <p class="mb-2">024 279 9990</p>
+                        <p>info@montessoribloomgh.com</p>
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-stone-700 mt-12 pt-8 text-sm text-center">
+                <p>&copy; 2025 Montessori Bloom. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Initialize feather icons
+        feather.replace();
+    </script>
+</body>
+</html>
