@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montessori Bloom</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1585435557343-3b77c8a0b0f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80');
+}
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.02); }
+        .testimonial-card { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="font-poppins bg-stone-50 text-stone-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-playfair text-2xl text-amber-600">Montessori Bloom</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="#home" class="text-amber-600 hover:text-amber-700 px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="#philosophy" class="text-stone-600 hover:text-amber-600 px-3 py-2 text-sm font-medium">Philosophy</a>
+                        <a href="#programs" class="text-stone-600 hover:text-amber-600 px-3 py-2 text-sm font-medium">Programs</a>
+                        <a href="#faculty" class="text-stone-600 hover:text-amber-600 px-3 py-2 text-sm font-medium">Faculty</a>
+                        <a href="#testimonials" class="text-stone-600 hover:text-amber-600 px-3 py-2 text-sm font-medium">Testimonials</a>
+                        <a href="#contact" class="text-stone-600 hover:text-amber-600 px-3 py-2 text-sm font-medium">Contact</a>
+                        <button class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-md transition duration-300">Schedule a Tour</button>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-stone-600 hover:text-amber-600">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-base font-medium text-stone-600 hover:text-amber-600">Home</a>
+                <a href="#philosophy" class="block px-3 py-2 text-base font-medium text-stone-600 hover:text-amber-600">Philosophy</a>
+                <a href="#programs" class="block px-3 py-2 text-base font-medium text-stone-600 hover:text-amber-600">Programs</a>
+                <a href="#faculty" class="block px-3 py-2 text-base font-medium text-stone-600 hover:text-amber-600">Faculty</a>
+                <a href="#testimonials" class="block px-3 py-2 text-base font-medium text-stone-600 hover:text-amber-600">Testimonials</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-stone-600 hover:text-amber-600">Contact</a>
+                <button class="w-full bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-md mt-2">Schedule a Tour</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Slider Section -->
+    <section id="home" class="relative h-screen overflow-hidden">
+        <div class="swiper-container h-full w-full">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide relative">
+                    <img src="https://images.unsplash.com/photo-1600494603989-9650cf6ddd3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&h=1080&q=80" alt="Children learning" class="w-full h-full object-cover">
+<div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-center px-4">
+                        <div>
+                            <h1 class="font-playfair text-5xl md:text-6xl font-bold mb-4 text-white">Nurturing Young Minds</h1>
+                            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-white">A holistic Montessori education that fosters independence, creativity, and lifelong learning</p>
+                            <div class="space-x-4">
+                                <button class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-md font-medium transition duration-300 hover-scale">Enroll Now</button>
+                                <button class="bg-white hover:bg-stone-100 text-amber-600 px-8 py-3 rounded-md font-medium transition duration-300 hover-scale">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide relative">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&h=1080&q=80" alt="Classroom environment" class="w-full h-full object-cover">
+<div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-center px-4">
+                        <div>
+                            <h1 class="font-playfair text-5xl md:text-6xl font-bold mb-4 text-white">Child-Centered Learning</h1>
+                            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-white">Our carefully prepared environments inspire curiosity and discovery</p>
+                            <div class="space-x-4">
+                                <button class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-md font-medium transition duration-300 hover-scale">View Programs</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide relative">
+                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&h=1080&q=80" alt="Montessori materials" class="w-full h-full object-cover">
+<div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-center px-4">
+                        <div>
+                            <h1 class="font-playfair text-5xl md:text-6xl font-bold mb-4 text-white">Hands-On Education</h1>
+                            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-white">Concrete materials make abstract concepts accessible to young learners</p>
+                            <div class="space-x-4">
+                                <button class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-md font-medium transition duration-300 hover-scale">Schedule a Tour</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add navigation buttons -->
+            <div class="swiper-button-next text-white"></div>
+            <div class="swiper-button-prev text-white"></div>
+        </div>
+    </section>
+<!-- Philosophy Section -->
+    <section id="philosophy" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-stone-800 mb-4">Our Montessori Philosophy</h2>
+                <p class="text-stone-600 max-w-3xl mx-auto">We believe in creating an environment where children can develop their full potential through self-directed activity, hands-on learning, and collaborative play.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-stone-50 p-8 rounded-lg hover-scale">
+                    <div class="text-amber-500 mb-4">
+                        <i data-feather="users" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="font-playfair text-xl font-bold mb-3">Mixed-Age Classrooms</h3>
+                    <p class="text-stone-600">Children learn from and teach each other in carefully prepared environments that span three-year age groupings.</p>
+                </div>
+                <div class="bg-stone-50 p-8 rounded-lg hover-scale">
+                    <div class="text-amber-500 mb-4">
+                        <i data-feather="activity" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="font-playfair text-xl font-bold mb-3">Hands-On Learning</h3>
+                    <p class="text-stone-600">Concrete materials allow children to explore abstract concepts through all their senses before moving to abstraction.</p>
+                </div>
+                <div class="bg-stone-50 p-8 rounded-lg hover-scale">
+                    <div class="text-amber-500 mb-4">
+                        <i data-feather="compass" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="font-playfair text-xl font-bold mb-3">Child-Centered Approach</h3>
+                    <p class="text-stone-600">Teachers guide rather than instruct, helping each child follow their own natural path of development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-stone-800 mb-4">Our Programs</h2>
+                <p class="text-stone-600 max-w-3xl mx-auto">We offer developmentally appropriate programs for children from toddlerhood through elementary school.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-sm hover-scale">
+                    <div class="bg-amber-100 p-4 rounded-full w-20 h-20 flex items-center justify-center mb-6 mx-auto">
+                        <i data-feather="smile" class="w-8 h-8 text-amber-600"></i>
+                    </div>
+                    <h3 class="font-playfair text-xl font-bold mb-3 text-center">Toddler Community</h3>
+                    <p class="text-stone-600 text-center mb-4">Ages 18 months - 3 years</p>
+                    <ul class="text-stone-600 space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-4 h-4 text-amber-500 mr-2 mt-1"></i>
+                            <span>Developing independence and language skills</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-4 h-4 text-amber-500 mr-2 mt-1"></i>
+                            <span>Practical life activities</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-4 h-4 text-amber-500 mr-2 mt-1"></i>
+                            <span>Sensory exploration</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm hover-scale transform scale-105 z-10 border-2 border-amber-300">
+                    <div class="bg-amber-100 p-4 rounded-full w-20 h-20 flex items-center justify-center mb-6 mx-auto">
+                        <i data-feather="star" class="w-8 h-8 text-amber-600"></i>
+                    </div>
+                    <h3 class="font-playfair text-xl font-bold mb-3 text-center">Primary Program</h3>
+                    <p class="text-stone-600 text-center mb-4">Ages 3 - 6 years</p>
+                    <ul class="text-stone-600 space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-4 h-4 text-amber-500 mr-2 mt-1"></i>
+                            <span>Full Montessori curriculum</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-4 h-4 text-amber-500 mr-2 mt-1"></i>
+                            <span>Reading, writing, and mathematics</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-4 h-4 text-amber-500 mr-2 mt-1"></i>
+                            <span>Cultural studies and science</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm hover-scale">
+                    <div class="bg-amber-100 p-4 rounded-full w-20 h-20 flex items-center justify-center mb-6 mx-auto">
+                        <i data-feather="book-open" class="w-8 h-8 text-amber-600"></i>
+                    </div>
+                    <h3 class="font-playfair text-xl font-bold mb-3 text-center">Elementary Program</h3>
+                    <p class="text-stone-600 text-center mb-4">Ages 6 - 12 years</p>
+                    <ul class="text-stone-600 space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-4 h-4 text-amber-500 mr-2 mt-1"></i>
+                            <span>Integrated cosmic curriculum</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-4 h-4 text-amber-500 mr-2 mt-1"></i>
+                            <span>Project-based learning</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-4 h-4 text-amber-500 mr-2 mt-1"></i>
+                            <span>Community engagement</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section id="faculty" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-stone-800 mb-4">Meet Our Faculty</h2>
+                <p class="text-stone-600 max-w-3xl mx-auto">Our AMI-certified teachers are passionate about Montessori education and dedicated to each child's development.</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80" alt="Teacher Maria" class="w-32 h-32 rounded-full object-cover mx-auto mb-4">
+<h3 class="font-playfair text-xl font-bold mb-1">Maria Johnson</h3>
+                    <p class="text-amber-600 mb-2">Head of School</p>
+                    <p class="text-stone-600 text-sm">AMI Diploma, 15 years experience</p>
+                </div>
+                <div class="text-center">
+        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80" alt="Teacher David" class="w-32 h-32 rounded-full object-cover mx-auto mb-4">
+<h3 class="font-playfair text-xl font-bold mb-1">David Chen</h3>
+                    <p class="text-amber-600 mb-2">Primary Guide</p>
+                    <p class="text-stone-600 text-sm">AMI Diploma, 8 years experience</p>
+                </div>
+                <div class="text-center">
+        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80" alt="Teacher Sarah" class="w-32 h-32 rounded-full object-cover mx-auto mb-4">
+<h3 class="font-playfair text-xl font-bold mb-1">Sarah Williams</h3>
+                    <p class="text-amber-600 mb-2">Toddler Guide</p>
+                    <p class="text-stone-600 text-sm">AMI Diploma, 5 years experience</p>
+                </div>
+                <div class="text-center">
+        <img src="https://images.unsplash.com/photo-1562788869-4ed32648eb72?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80" alt="Teacher Michael" class="w-32 h-32 rounded-full object-cover mx-auto mb-4">
+<h3 class="font-playfair text-xl font-bold mb-1">Michael Brown</h3>
+                    <p class="text-amber-600 mb-2">Elementary Guide</p>
+                    <p class="text-stone-600 text-sm">AMI Diploma, 10 years experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-stone-800 mb-4">What Parents Say</h2>
+                <p class="text-stone-600 max-w-3xl mx-auto">Hear from our Montessori Bloom families about their experiences.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80" alt="Parent" class="w-12 h-12 rounded-full mr-4">
+<div>
+                            <h4 class="font-bold">Emily Rodriguez</h4>
+                            <p class="text-stone-500 text-sm">Parent of Primary student</p>
+                        </div>
+                    </div>
+                    <p class="text-stone-600 italic">"The transformation in my daughter's confidence and love for learning has been remarkable. The Montessori approach truly nurtures the whole child."</p>
+                    <div class="flex mt-4 text-amber-500">
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80" alt="Parent" class="w-12 h-12 rounded-full mr-4">
+<div>
+                            <h4 class="font-bold">James Wilson</h4>
+                            <p class="text-stone-500 text-sm">Parent of Elementary student</p>
+                        </div>
+                    </div>
+                    <p class="text-stone-600 italic">"Our son has developed such independence and critical thinking skills. The mixed-age classroom has been wonderful for his social development too."</p>
+                    <div class="flex mt-4 text-amber-500">
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-playfair text-3xl font-bold text-center mb-12">Our Learning Environment</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+        <img src="https://images.unsplash.com/photo-1600494603989-9650cf6ddd3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&h=360&q=80" alt="Classroom" class="w-full h-48 object-cover rounded hover-scale">
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&h=360&q=80" alt="Children working" class="w-full h-48 object-cover rounded hover-scale">
+        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&h=360&q=80" alt="Outdoor play" class="w-full h-48 object-cover rounded hover-scale">
+        <img src="https://images.unsplash.com/photo-1600494603989-9650cf6ddd3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&h=360&q=80" alt="Materials" class="w-full h-48 object-cover rounded hover-scale">
+</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-stone-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-6">Contact Us</h2>
+                    <p class="mb-8 text-stone-300">We'd love to hear from you! Schedule a tour or ask any questions about our programs.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i data-feather="map-pin" class="w-5 h-5 text-amber-400 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Address</h4>
+                                <p class="text-stone-300">No. 15 Osu Oxford Street, Accra, Ghana</p>
+</div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="phone" class="w-5 h-5 text-amber-400 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Phone</h4>
+                                <p class="text-stone-300">024 279 9990</p>
+</div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="mail" class="w-5 h-5 text-amber-400 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p class="text-stone-300">info@montessoribloomgh.com</p>
+</div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-bold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-stone-300 hover:text-amber-400"><i data-feather="facebook" class="w-6 h-6"></i></a>
+                            <a href="#" class="text-stone-300 hover:text-amber-400"><i data-feather="instagram" class="w-6 h-6"></i></a>
+                            <a href="#" class="text-stone-300 hover:text-amber-400"><i data-feather="twitter" class="w-6 h-6"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form class="bg-stone-700 p-8 rounded-lg">
+                        <div class="mb-4">
+                            <label for="name" class="block text-stone-300 mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 bg-stone-600 rounded focus:outline-none focus:ring-2 focus:ring-amber-400 text-white">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-stone-300 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 bg-stone-600 rounded focus:outline-none focus:ring-2 focus:ring-amber-400 text-white">
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="block text-stone-300 mb-2">Phone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 bg-stone-600 rounded focus:outline-none focus:ring-2 focus:ring-amber-400 text-white">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-stone-300 mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 bg-stone-600 rounded focus:outline-none focus:ring-2 focus:ring-amber-400 text-white"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-md font-medium transition duration-300">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-playfair text-xl text-white mb-4">Montessori Bloom</h3>
+                    <p class="mb-4">Nurturing young minds through authentic Montessori education since 2010.</p>
+                    <button class="bg-amber-500 hover:bg-amber-600 text-white px-6 py-2 rounded-md text-sm font-medium transition duration-300">Schedule a Tour</button>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-amber-400 transition duration-300">Home</a></li>
+                        <li><a href="philosophy.html" class="hover:text-amber-400 transition duration-300">Our Philosophy</a></li>
+                        <li><a href="programs.html" class="hover:text-amber-400 transition duration-300">Programs</a></li>
+                        <li><a href="faculty.html" class="hover:text-amber-400 transition duration-300">Faculty</a></li>
+                        <li><a href="contact.html" class="hover:text-amber-400 transition duration-300">Contact</a></li>
+                    </ul>
+</div>
+                <div>
+                    <h4 class="text-white font-medium mb-4">Programs</h4>
+                    <ul class="space-y-2">
+                        <li><a href="toddler-program.html" class="hover:text-amber-400 transition duration-300">Toddler Community</a></li>
+                        <li><a href="primary-program.html" class="hover:text-amber-400 transition duration-300">Primary Program</a></li>
+                        <li><a href="elementary-program.html" class="hover:text-amber-400 transition duration-300">Elementary Program</a></li>
+                        <li><a href="summer-camp.html" class="hover:text-amber-400 transition duration-300">Summer Camp</a></li>
+                    </ul>
+</div>
+                <div>
+                    <h4 class="text-white font-medium mb-4">Contact</h4>
+                    <address class="not-italic">
+                        <p class="mb-2">No. 15 Osu Oxford Street</p>
+                        <p class="mb-2">Accra, Ghana</p>
+                        <p class="mb-2">024 279 9990</p>
+                        <p>info@montessoribloomgh.com</p>
+                    </address>
+</div>
+            </div>
+            <div class="border-t border-stone-700 mt-12 pt-8 text-sm text-center">
+                <p>&copy; 2025 Montessori Bloom. All rights reserved.</p>
+</div>
+        </div>
+    </footer>
+    <!-- Add Swiper JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        // Mobile menu toggle
+document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Initialize feather icons
+        feather.replace();
+
+        // Initialize Vanta.js effect
+        VANTA.WAVES({
+            el: "#home",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xed9c00,
+            shininess: 0.00,
+            waveHeight: 20.00,
+            waveSpeed: 0.50,
+            zoom: 0.65
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+-- If login fails after seeding with pgcrypto crypt(), run this AFTER or INSTEAD of relying on crypt().
+-- Replace the hash below by running: node scripts/hash-password.mjs Password123!
+-- Then paste the printed hash into this update.
+
+-- Example (replace YOUR_BCRYPT_HASH):
+-- UPDATE profiles
+-- SET password_hash = 'YOUR_BCRYPT_HASH'
+-- WHERE email IN (
+--   'principal@montessoribloom.edu',
+--   'teacher1@montessoribloom.edu',
+--   'teacher2@montessoribloom.edu',
+--   'security@montessoribloom.edu',
+--   'accountant@montessoribloom.edu',
+--   'parent1@example.com',
+--   'parent2@example.com'
+-- );
